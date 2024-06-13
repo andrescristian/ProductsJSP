@@ -92,7 +92,7 @@ public class Controller extends HttpServlet {
 	}
 	
 	protected void editarProduto(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-			contato.setId(request.getParameter("id")); //Vai pegar os dados que estão no input do editar.jsp e jogar nas variáveis do JavaBeans
+			contato.setId(request.getParameter("id"));
 			contato.setNome(request.getParameter("nome"));
 			contato.setQuantidade(request.getParameter("quantidade"));
 			contato.setPreco(request.getParameter("preco"));
